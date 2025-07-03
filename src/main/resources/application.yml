@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: file-download
+  datasource:
+    url: jdbc:postgresql://cohort60-forum-cohort60.c.aivencloud.com:19864/defaultdb
+    username: avnadmin
+    password: ${AIVEN_PASS}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
